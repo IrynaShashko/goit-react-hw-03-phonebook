@@ -7,18 +7,31 @@ export const AppContainer = styled.div`
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background-color: #eff2aa;
+  background-image: radial-gradient(
+    circle,
+    #eff2aa,
+    #ffd89a,
+    #ffbda7,
+    #ffa9ca,
+    #f4a6f4
+  );
 `;
 export const PhonebookContainer = styled.div`
   margin 0 auto;
   padding: 30px;
   border: 1px solid #ccc;
-border-radius: 50px;
-background-color: #f5f5f5;
-background-image: linear-gradient(to right top, #ebf24d, #ffc44f, #ff977d, #ff7fb3, #dc81dc);
-box-shadow: 0px 2px 5px 4px rgba(0, 0, 0, 0.75);
-
+  border-radius: 50px;
+  background-color: #f5f5f5;
+  background-image: radial-gradient(
+    circle, 
+    #eff2aa, 
+    #ffd89a, 
+    #ffbda7, 
+    #ffa9ca, 
+    #f4a6f4);
+  box-shadow: 0px 2px 5px 4px rgba(0, 0, 0, 0.75);
 `;
+
 export const H1 = styled.h1`
   display: flex;
   justify-content: center;

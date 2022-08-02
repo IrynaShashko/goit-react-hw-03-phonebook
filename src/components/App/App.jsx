@@ -40,14 +40,9 @@ class App extends Component {
 
   render() {
     const normalizedContacts = this.state.filter.toLowerCase();
-    let visibleContacts;
-    if (normalizedContacts.length === 0) {
-      visibleContacts = this.state.contacts;
-    } else {
-      visibleContacts = this.state.contacts.filter(contact =>
-        contact.name.toLowerCase().includes(normalizedContacts)
-      );
-    }
+    const visibleContacts = this.state.contacts.filter(contact =>
+      contact.name.toLowerCase().includes(normalizedContacts)
+    );
 
     return (
       <AppContainer>
