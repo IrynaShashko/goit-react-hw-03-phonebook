@@ -6,7 +6,7 @@ export const AppContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  padding: 50px;
+  width: 100vw;
   background: linear-gradient(
     146deg,
     rgba(236, 218, 72, 0.7483368347338936) 0%,
@@ -15,7 +15,7 @@ export const AppContainer = styled.div`
 `;
 export const PhonebookContainer = styled.div`
   margin 0 auto;
-  padding: 50px;
+  padding: 30px;
   border: 1px solid #ccc;
 border-radius: 50px;
 background-color: #f5f5f5;
@@ -27,7 +27,7 @@ export const H1 = styled.h1`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 60px;
+  font-size: 40px;
   color: #fff;
   margin: 0;
   text-shadow: -1px 0px 14px rgba(51, 154, 255, 1);

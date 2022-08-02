@@ -16,7 +16,6 @@ class App extends Component {
     });
   };
   deleteContact = id => {
-    console.log(id, 'cliiik');
     this.setState({
       contacts: this.state.contacts.filter(contact => contact.id !== id),
     });
@@ -26,6 +25,18 @@ class App extends Component {
       filter: e.currentTarget.value,
     });
   };
+  componentDidMount() {
+    const contacts = localStorage.getItem('contacts');
+    const parsedContacts = JSON.parse(contacts);
+    this.setState({
+      contacts: parsedContacts,
+    });
+  }
+  componentDidUpdate(prevProps, prevState) {
+    if (this.state.contacts !== prevState.contacts) {
+      localStorage.setItem('contacts', JSON.stringify(this.state.contacts));
+    }
+  }
 
   render() {
     const normalizedContacts = this.state.filter.toLowerCase();

@@ -4,6 +4,7 @@ import { FiHeart } from 'react-icons/fi';
 import propTypes from 'prop-types';
 import {
   ContactsList,
+  ContactsContainer,
   ContactsItem,
   ContactsItemButton,
   ContactsName,
@@ -18,8 +19,10 @@ const Contacts = ({ contacts, deleteContact }) => {
         return (
           <ContactsItem key={contact.id}>
             <FiHeart />
-            <ContactsName>{contact.name}:</ContactsName>
-            <ContactsNumber>{contact.number}</ContactsNumber>
+            <ContactsContainer>
+              <ContactsName>{contact.name}:</ContactsName>
+              <ContactsNumber>{contact.number}</ContactsNumber>
+            </ContactsContainer>
             <ContactsItemButton
               type="submit"
               onClick={() => deleteContact(contact.id)}
