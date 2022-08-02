@@ -29,10 +29,13 @@ export const Button = styled.button`
   border-radius: 50px;
   cursor: pointer;
   box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.75);
-  background: linear-gradient(
-    146deg,
-    rgba(236, 218, 72, 0.7483368347338936) 0%,
-    rgba(152, 69, 252, 0.7315301120448179) 100%
+  background-image: linear-gradient(
+    to right top,
+    #eff2aa,
+    #ffd89a,
+    #ffbda7,
+    #ffa9ca,
+    #f4a6f4
   );
   &:hover,
   &:focus {

@@ -7,11 +7,7 @@ export const AppContainer = styled.div`
   align-items: center;
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(
-    146deg,
-    rgba(236, 218, 72, 0.7483368347338936) 0%,
-    rgba(152, 69, 252, 0.7315301120448179) 100%
-  );
+  background-color: #eff2aa;
 `;
 export const PhonebookContainer = styled.div`
   margin 0 auto;
@@ -19,7 +15,7 @@ export const PhonebookContainer = styled.div`
   border: 1px solid #ccc;
 border-radius: 50px;
 background-color: #f5f5f5;
-background: linear-gradient(146deg, rgba(236,218,72,0.7483368347338936) 0%, rgba(152,69,252,0.7315301120448179) 100%);
+background-image: linear-gradient(to right top, #ebf24d, #ffc44f, #ff977d, #ff7fb3, #dc81dc);
 box-shadow: 0px 2px 5px 4px rgba(0, 0, 0, 0.75);
 
 `;
