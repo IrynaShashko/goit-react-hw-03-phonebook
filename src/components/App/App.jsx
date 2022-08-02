@@ -27,7 +27,7 @@ class App extends Component {
   };
   componentDidMount() {
     const contacts = localStorage.getItem('contacts');
-    const parsedContacts = JSON.parse(contacts);
+    const parsedContacts = JSON.parse(contacts) || [];
     this.setState({
       contacts: parsedContacts,
     });
@@ -40,9 +40,15 @@ class App extends Component {
 
   render() {
     const normalizedContacts = this.state.filter.toLowerCase();
-    const visibleContacts = this.state.contacts.filter(contact =>
-      contact.name.toLowerCase().includes(normalizedContacts)
-    );
+    let visibleContacts;
+    if (normalizedContacts.length === 0) {
+      visibleContacts = this.state.contacts;
+    } else {
+      visibleContacts = this.state.contacts.filter(contact =>
+        contact.name.toLowerCase().includes(normalizedContacts)
+      );
+    }
+
     return (
       <AppContainer>
         <PhonebookContainer>
@@ -50,10 +56,12 @@ class App extends Component {
           <ContactsForm onSubmit={this.formSumbit} />
           <H2>Contacts</H2>
           <Filter filter={this.state.filter} handleChange={this.handleChange} />
-          <Contacts
-            contacts={visibleContacts}
-            deleteContact={this.deleteContact}
-          />
+          {visibleContacts && (
+            <Contacts
+              contacts={visibleContacts}
+              deleteContact={this.deleteContact}
+            />
+          )}
         </PhonebookContainer>
       </AppContainer>
     );

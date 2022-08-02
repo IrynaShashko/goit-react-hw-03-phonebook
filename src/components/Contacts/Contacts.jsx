@@ -37,7 +37,7 @@ const Contacts = ({ contacts, deleteContact }) => {
 };
 
 Contacts.propTypes = {
-  contacts: propTypes.array.isRequired,
+  contacts: propTypes.array,
   deleteContact: propTypes.func.isRequired,
 };
 
