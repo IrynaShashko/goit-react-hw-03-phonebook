@@ -18,10 +18,15 @@ export const ContactsItem = styled.li`
   border: 1px solid #fff;
   border-radius: 50px;
   background: linear-gradient(
-    90deg,
-    rgba(58, 161, 180, 0.8491771708683473) 0%,
-    rgba(252, 69, 186, 0.5298494397759104) 100%
+    146deg,
+    rgba(236, 218, 72, 0.7483368347338936) 0%,
+    rgba(152, 69, 252, 0.7315301120448179) 100%
   );
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
+  &:hover,
+  &:focus {
+    scale: 1.1;
+  }
 `;
 export const ContactsContainer = styled.div`
   display: flex;

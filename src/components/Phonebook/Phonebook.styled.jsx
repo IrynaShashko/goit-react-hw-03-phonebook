@@ -34,4 +34,8 @@ export const Button = styled.button`
     rgba(236, 218, 72, 0.7483368347338936) 0%,
     rgba(152, 69, 252, 0.7315301120448179) 100%
   );
+  &:hover,
+  &:focus {
+    scale: 1.1;
+  }
 `;
