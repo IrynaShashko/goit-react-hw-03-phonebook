@@ -17,7 +17,7 @@ export const ContactsItem = styled.li`
   margin-bottom: 10px;
   border: 1px solid #fff;
   border-radius: 50px;
-  background-color: #bab079;
+  background-color: #f5f382;
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.75);
   &:hover,
   &:focus {
@@ -51,5 +51,5 @@ export const ContactsItemButton = styled.button`
   border-radius: 50px;
   cursor: pointer;
   box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.75);
-  background-color: #005247;
+  background-color: #000;
 `;
