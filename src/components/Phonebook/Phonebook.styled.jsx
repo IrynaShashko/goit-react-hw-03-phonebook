@@ -28,15 +28,9 @@ export const Button = styled.button`
   border: 1px solid #ccc;
   border-radius: 50px;
   cursor: pointer;
+  color: #fff;
   box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.75);
-  background-image: linear-gradient(
-    to right top,
-    #eff2aa,
-    #ffd89a,
-    #ffbda7,
-    #ffa9ca,
-    #f4a6f4
-  );
+  background-color: #005247;
   &:hover,
   &:focus {
     scale: 1.1;
